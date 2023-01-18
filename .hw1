@@ -1,1 +1,15 @@
+#calories =  (age * 0.2757) + (Weight * 0.03295) + ((Heart_Rate * 1.0781) - 75.4991 ) * (Time / 8.368)
+
+#print(f'Calories: {calories:.2f} calories')
+
+print("Hello! This program will calculate the calories you have burned during your workout!")
+age = input("Enter Age(Years): ")
+Weight = input("Enter Weight(Pounds): ")
+HeartRate = input("Enter Heart Rate(BPM): ")
+Time = input("Enter amount of time you worked out(Minutes): ")
+
+calories = float( (float(age) * 0.2757) + (float(Weight) * 0.03295) + ((float(HeartRate) * 1.0781) - 75.4991 ) * (
+       float(Time) / 8.368))
+
+print(int(calories) ,"Calories Burned")
 
